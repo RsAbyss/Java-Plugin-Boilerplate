@@ -1,5 +1,9 @@
 package com.abyss.plugin;
-import kraken.plugin.api.*;
+
+import kraken.plugin.api.Player;
+import kraken.plugin.api.Plugin;
+import kraken.plugin.api.PluginContext;
+import kraken.plugin.api.WidgetItem;
 
 import java.util.Random;
 
@@ -8,6 +12,7 @@ public class JavaPlugin extends Plugin {
     @Override
     public boolean onLoaded(PluginContext pluginContext) {
         pluginContext.setName("Boilerplate Plugin");
+        pluginContext.setCategory("Boilerplate Category");
         return super.onLoaded(pluginContext);
     }
 
@@ -27,8 +32,8 @@ public class JavaPlugin extends Plugin {
     }
 
     @Override
-    public void initImGui() {
-        super.initImGui();
+    public int onServerTick(Player self, long tickCount) {
+        return super.onServerTick(self, tickCount);
     }
 
     @Override
@@ -47,11 +52,6 @@ public class JavaPlugin extends Plugin {
     }
 
     @Override
-    public void onConVarChanged(ConVar conv, int oldValue, int newValue) {
-        super.onConVarChanged(conv, oldValue, newValue);
-    }
-
-    @Override
     public void onDebugLog(String log) {
         super.onDebugLog(log);
     }
@@ -63,7 +63,7 @@ public class JavaPlugin extends Plugin {
 
     @Override
     public void onLocalPlayerChanged(Player self) {
-        super.onLocalPlayerChanged(self);
+
     }
 
     @Override
