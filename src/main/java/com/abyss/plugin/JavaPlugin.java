@@ -1,9 +1,9 @@
 package com.abyss.plugin;
 
-import kraken.plugin.api.Player;
-import kraken.plugin.api.Plugin;
-import kraken.plugin.api.PluginContext;
-import kraken.plugin.api.WidgetItem;
+import abyss.plugin.api.Player;
+import abyss.plugin.api.Plugin;
+import abyss.plugin.api.PluginContext;
+import abyss.plugin.api.WidgetItem;
 
 import java.util.Random;
 
